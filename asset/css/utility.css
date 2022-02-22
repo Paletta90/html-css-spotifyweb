@@ -1,10 +1,20 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    overflow-wrap: break-word;
+/* Padding */
+.p-xl-10{
+    padding-left: 10px;
 }
-
+.p-yb-10{
+    padding-bottom: 10px;
+}
+.p-yb-20{
+    padding-bottom: 20px;
+}
+/* Font */
+.f-white{
+    color: white;
+}
+.f-grey{
+    color: #707070;
+}
 /* Background */
 .bg-aside{
     /* background-color: #000000; */
@@ -27,3 +37,27 @@
 .flex{
     display: flex;
 }
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.justify-space_between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.align-inherit{
+    align-items: inherit;
+}
+
+/* Container */
+.cont-90{
+    width: 90%;
+    margin: 0 auto;
+}
+
+

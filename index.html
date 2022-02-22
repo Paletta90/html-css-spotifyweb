@@ -15,7 +15,52 @@
 <body>
     <div class="cont-body flex">
         <!-- Barra delle playlist a sinistra -->
-        <aside class="bg-aside"></aside>
+        <aside class="bg-aside flex-column justify-space_between">
+            <ul>
+                <li>
+                    <img id="logo" src="./asset/img/logo-small.svg" alt="">
+                </li>
+                <li>
+                    <img src="./asset/img/home.svg" alt="">
+                    <p>Home</p>
+                </li>
+                <li>
+                    <img src="./asset/img/search.svg" alt="">
+                    <p>Cerca</p>
+                </li>
+                <li class="p-yb-20">
+                    <img src="./asset/img/libreria.svg" alt="">
+                    <p>La tua libreria</p>
+                </li>
+                <!-- Playlist -->
+                <li class="playlist">
+                    <div class="flex-column f-grey">
+                        <div class="f-white p-yb-10">Playlist</div>
+                        <div class="p-yb-10"><i class="fa-solid fa-plus plus"></i><span> Crea playlist</span></div>
+                        <ul class="new-playlist">
+                            <li>Nuova playlist</li>
+                            <li>Nuova playlist</li>
+                            <li>Nuova playlist</li>
+                            <li>Nuova playlist</li>
+                            <li>Nuova playlist</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li class="flex-column align-inherit p-yb-10">
+                    <div class="flex align-center justify-center">
+                        <img src="./asset/img/download.svg" alt="">
+                        <p>Installa app</p>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <img src="./asset/img/profile.svg" alt="">
+                    <p>John Dee</p>
+                </li>
+            </ul>
+        </aside>
 
         <!-- Corpo centrale -->
         <main class="bg-main">
