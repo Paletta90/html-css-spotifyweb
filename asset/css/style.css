@@ -65,7 +65,8 @@ aside li{
 aside hr{
     display: none;
 } 
-.loghi-high p,
+
+.loghi-high li:not(li>.f-big),
 .playlist{
     color: #707070;
 }

@@ -10,6 +10,9 @@
     aside>div:nth-of-type(1){
         align-items: flex-start;
     }
+    .loghi-high li:nth-of-type(1) img{
+        width: 40px;
+    }
     aside img{
         margin-right: 10px;
     }
@@ -39,4 +42,14 @@
         border-left: 4px solid yellow;
         padding-left: 6px;
     }
+    .loghi-high li:hover p,
+    .playlist li:hover,
+    .playlist div:nth-of-type(2):hover span,
+    .loghi-low div:hover p{
+        color: white;
+    }
+    .playlist div:nth-of-type(2):hover .plus{
+        background-color: white;
+    }
+
 }
