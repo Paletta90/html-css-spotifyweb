@@ -7,6 +7,9 @@
     main{
         width: calc(100% - 175px);
     }
+    header{
+        width: calc(100% - 175px);
+    }
     aside>div:nth-of-type(1){
         align-items: flex-start;
     }
@@ -21,7 +24,6 @@
     .loghi-low,
     .playlist,
     aside hr{
-        /* padding-left: 5px; */
         display: block;
     } 
     .loghi-high li,
@@ -50,6 +52,10 @@
     }
     .playlist div:nth-of-type(2):hover .plus{
         background-color: white;
+    }
+    .upgrade:hover{
+        padding: 10px 30px;
+        cursor: pointer;
     }
 
 }
