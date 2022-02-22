@@ -2,32 +2,41 @@
 
     /* Comportamento Aside */
     aside{
-        width: 150px;
+        width: 175px;
     }
     main{
-        width: calc(100% - 150px);
+        width: calc(100% - 175px);
     }
-    aside ul{
-        text-align:inherit;
-        /* padding-left: 10px; */
+    aside>div:nth-of-type(1){
+        align-items: flex-start;
     }
-    aside ul li{
-        display: flex;
-        align-items: center;
+    aside img{
+        margin-right: 10px;
     }
-    aside ul li p{
+    .loghi-high p,
+    .loghi-low p,
+    .loghi-low,
+    .playlist,
+    aside hr{
+        /* padding-left: 5px; */
         display: block;
+    } 
+    .loghi-high li,
+    .playlist> div > div:nth-of-type(1),
+    .playlist> div > div:nth-of-type(2),
+    .playlist li,
+    .loghi-low{
+        padding-left: 10px; 
     }
-    .playlist{
-        display: block;
+    .loghi-high li,
+    .playlist> div > div:nth-of-type(2),
+    .playlist li,
+    .loghi-low{
+        cursor: pointer;
     }
-    aside ul li hr{
-        display: block;
-        /* color: #707070; */
-        color: yellow;
+    .loghi-high li:hover,
+    .playlist li:hover{
+        border-left: 4px solid yellow;
+        padding-left: 6px;
     }
-    aside ul:nth-of-type(2) li:nth-of-type(1) div{
-        justify-content: flex-start;
-    }
-    
 }

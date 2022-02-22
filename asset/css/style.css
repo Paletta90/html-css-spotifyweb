@@ -8,7 +8,11 @@
 ul{
     list-style-type: none;
 }
-
+p,
+span,
+li{
+    font-weight: 1000;
+}
 /* Layout WebApp */
 body{
     width: 100vw;
@@ -21,8 +25,6 @@ body{
 aside{
     width: 50px;
     height: 100%;
-    /* position: fixed; */
-    /* position: relative; */
 }
 main{
     width: calc(100% - 50px);
@@ -43,22 +45,37 @@ footer{
 
 /* Aside */
 
-aside ul li img{
+aside img{
     width: 25px;
-    color: red;
+    margin-bottom: 5px;
 }
-aside ul{
-    text-align: center;
-    width: 90%;
-    margin: 0 auto;
+aside li{
+    margin-bottom: 5px;
 }
-aside ul li{
-    padding-bottom: 5px;
+.new-playlist{
+    height: 20vh;
+    overflow-y: auto;
 }
-aside ul li p{
-    color: #707070;
-    padding-left: 5px;
+.new-playlist li{
+    margin-bottom: 15px;
+}
+.loghi-high p,
+.loghi-low p,
+.playlist,
+aside hr{
     display: none;
+} 
+.loghi-high p,
+.playlist{
+    color: #707070;
+}
+.loghi-high li,
+.loghi-low div{
+    display: flex;
+    align-items: center;
+}
+.loghi-low{
+    width: 100%;
 }
 .plus{
     padding: 10px;
@@ -66,15 +83,4 @@ aside ul li p{
     background-color: #707070;
     color: black;
     vertical-align: middle;
-}
-.new-playlist{
-    margin-left: 0.1em;
-    overflow-y: auto;
-    height: 25vh;
-}
-.playlist{
-    display: none;
-}
-aside ul li hr{
-    display: none;
 }
