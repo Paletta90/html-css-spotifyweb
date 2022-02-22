@@ -2,6 +2,12 @@
 .p-xl-10{
     padding-left: 10px;
 }
+.p-xr-10{
+    padding-right: 10px;
+}
+.p-xt-10{
+    padding-top: 10px;
+}
 .p-yb-10{
     padding-bottom: 10px;
 }
@@ -28,6 +34,9 @@
 .text-center{
     text-align: center;
 }
+.f-uppercase{
+    text-transform: uppercase;
+}
 /* Background */
 .bg-aside{
     background-color: #000000;
@@ -38,8 +47,8 @@
     background-color: red;
 }
 .bg-main{
-    /* background-color: #141922; */
-    background-color: yellow;
+    background-color: #141922;
+    /* background-color: yellow; */
 }
 .bg-header{
     background-color: rgba(0,0,0,0.5);
@@ -68,9 +77,13 @@
 }
 
 /* Container */
-.cont-90{
+.cont-100{
     width: 100%;
     height: 100%;
 }
 
-
+.cont-95{
+    padding-top: 75px;
+    width: 95%;
+    margin: 0 auto;
+}

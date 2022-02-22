@@ -1,6 +1,6 @@
-@media screen and (min-width: 481px){
 
-    /* Comportamento Aside */
+@media screen and (min-width: 481px){
+    /* Responsive Aside */
     aside{
         width: 175px;
     }
@@ -57,5 +57,32 @@
         padding: 10px 30px;
         cursor: pointer;
     }
-
 }
+/* Responsive Navbar */
+@media screen and (min-width: 482px) and (max-width: 724px){
+    .navbar li{
+        flex-basis: calc((100% / 3) - 5px);
+    }
+    .navbar{
+        font-size: 0.8em;
+    }
+}
+@media screen and (min-width: 725px) and (max-width: 900px){
+    .navbar li{
+        flex-basis: calc((100% / 5) - 5px);
+    }
+    .navbar{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 901px){
+    .navbar li{
+        flex-basis: inherit;
+        margin-right: 20px;
+    }
+    .navbar{
+        font-size: 0.8em;
+    }
+}
+
