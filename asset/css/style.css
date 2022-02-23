@@ -189,6 +189,14 @@ footer p{
 .cont-img img{
     width: 40px;
 }
+.block-left p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.block-left svg:hover{
+    fill: white;
+    cursor: pointer;
+}
 /* Block centrale */
 .block-center svg{
     width: 15px;
@@ -207,6 +215,16 @@ footer p{
     height: 100%;
     background-color: white;
 }
+.block-center svg{
+    cursor: pointer;
+}
+#play:hover{
+    width: 30px;
+}
+.line-done:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
 /* Block a destra */
 .block-right svg{
     width: 15px;
@@ -218,7 +236,9 @@ footer p{
     height: 4px;
     background-color: #707070;
 }
-
+.block-right svg{
+    cursor: pointer;
+}
 /* Tag in diplay:none nel footer*/
 .block-right svg,
 .block-right div{
