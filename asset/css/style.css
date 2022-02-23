@@ -219,11 +219,27 @@ footer p{
     cursor: pointer;
 }
 #play:hover{
-    width: 30px;
+    transform: scale(1.2);
 }
-.line-done:hover{
-    background-color: yellow;
+.time-line,
+.volume-line{
     cursor: pointer;
+}
+.time-line:hover .line-done,
+.volume-line:hover .line-done{
+    background-color: yellow;
+}
+.time-line:hover .circle,
+.volume-line:hover .circle{
+    display: block;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    align-self: center;
+    display: none;
 }
 /* Block a destra */
 .block-right svg{
@@ -241,6 +257,7 @@ footer p{
 }
 /* Tag in diplay:none nel footer*/
 .block-right svg,
-.block-right div{
-    display: none;
-}
+.block-right .volume-line,
+.block-right .line-done{
+        display: none;
+    }

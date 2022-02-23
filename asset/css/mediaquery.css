@@ -88,8 +88,9 @@
         flex-basis: calc(16.6666% - 10px);
     }
     .block-right svg,
-    .block-right div{
-    display: block;
+    .block-right .volume-line,
+    .block-right .line-done{
+        display: flex;
     }
 }
 
