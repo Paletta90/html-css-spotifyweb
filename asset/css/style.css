@@ -10,7 +10,8 @@ ul{
 }
 p,
 span,
-li{
+li,
+h2{
     font-weight: 1000;
 }
 /* Layout WebApp */
@@ -89,8 +90,10 @@ aside hr{
 /* Header */
 header{
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+}
+header div{
+    text-align: right;
 }
 .upgrade{
     text-transform: uppercase;
@@ -98,7 +101,10 @@ header{
     border: 1px solid white;
     border-radius: 25px;
 }
-
+.upgrade:hover{
+    padding: 10px 30px;
+    cursor: pointer;
+}
 /* Nav */
 .navbar{
     font-size: 0.6em;
@@ -122,9 +128,52 @@ header{
 .navbar li:hover .board{
     display: block;
 }
+.navbar li:hover{
+    margin-bottom: 5px;
+}
 .board{
     display: none;
     width: 30%;
     text-align: center;
     border: 1px solid yellow;
 }
+
+/* Griglia dei film */
+.grid-movie ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-movie li{
+    color: white;
+    flex-basis: calc(50% - 10px);
+    text-align: center;
+    margin-right: 10px;
+}
+.grid-movie h3{
+    padding-bottom: 10px;
+}
+.grid-movie p{
+    color: #707070;
+}
+
+.grid-movie li > div{
+    position: relative;
+}
+.fa-regular{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    opacity: 0;
+}
+.grid-movie li > div:hover > img{
+    cursor: pointer;
+    filter: opacity(0.2);
+}
+.grid-movie li > div:hover .fa-regular{
+    opacity: 1;
+    cursor: pointer;
+}
+
+

@@ -53,10 +53,7 @@
     .playlist div:nth-of-type(2):hover .plus{
         background-color: white;
     }
-    .upgrade:hover{
-        padding: 10px 30px;
-        cursor: pointer;
-    }
+    
 }
 /* Responsive Navbar */
 @media screen and (min-width: 482px) and (max-width: 724px){
@@ -74,6 +71,9 @@
     .navbar{
         font-size: 0.8em;
     }
+    .grid-movie li{
+        flex-basis: calc(25% - 10px);
+    }
 }
 
 @media screen and (min-width: 901px){
@@ -83,6 +83,9 @@
     }
     .navbar{
         font-size: 0.8em;
+    }
+    .grid-movie li{
+        flex-basis: calc(16.6666% - 10px);
     }
 }
 
