@@ -5,6 +5,9 @@
 .p-xr-10{
     padding-right: 10px;
 }
+.p-xr-20{
+    padding-right: 20px;
+}
 .p-xt-10{
     padding-top: 10px;
 }
@@ -49,8 +52,8 @@
     /* background-color: blue; */
 }
 .bg-footer{
-    /* background-color: #282828; */
-    background-color: red;
+    background-color: #282828;
+    /* background-color: red; */
 }
 .bg-main{
     background-color: #141922;
@@ -96,7 +99,10 @@
     width: 90%;
     margin: 0 auto;
 }
-
+.cont-60{
+    width: 60%;
+    margin: 0 auto;
+}
 /* Border */
 .border_radius-50{
     border-radius: 50%;
