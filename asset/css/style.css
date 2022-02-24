@@ -45,7 +45,6 @@ footer{
 }
 
 /* Aside */
-
 aside img{
     width: 20px;
     margin-bottom: 5px;
@@ -60,13 +59,6 @@ aside li{
 .new-playlist li{
     margin-bottom: 15px;
 }
-.loghi-high p,
-.loghi-low p,
-.playlist,
-aside hr{
-    display: none;
-} 
-
 .loghi-high li:not(li>.f-big),
 .playlist{
     color: #707070;
@@ -86,6 +78,12 @@ aside hr{
     color: black;
     vertical-align: middle;
 }
+.loghi-high p,
+.loghi-low p,
+.playlist,
+aside hr{
+    display: none;
+} 
 
 /* Header */
 header{
@@ -105,6 +103,7 @@ header div{
     padding: 10px 30px;
     cursor: pointer;
 }
+
 /* Nav */
 .navbar{
     font-size: 0.6em;
@@ -121,21 +120,19 @@ header div{
     flex-direction: column;
     align-items: center;
 }
-.navbar li:hover{
-    color: white;
-    cursor: pointer;
-}
-.navbar li:hover .board{
-    display: block;
-}
-.navbar li:hover{
-    margin-bottom: 5px;
-}
 .board{
     display: none;
     width: 30%;
     text-align: center;
     border: 1px solid yellow;
+}
+.navbar li:hover{
+    color: white;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.navbar li:hover .board{
+    display: block;
 }
 
 /* Griglia dei film */
@@ -156,7 +153,6 @@ header div{
 .grid-movie p{
     color: #707070;
 }
-
 .grid-movie li > div{
     position: relative;
 }
