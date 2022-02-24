@@ -1,4 +1,4 @@
-
+/* Comparsa dell'aside completo */
 @media screen and (min-width: 481px){
     /* Responsive Aside */
     aside{
@@ -16,7 +16,7 @@
     .loghi-high li:nth-of-type(1) img{
         width: 40px;
     }
-    aside img{
+    aside img:not(#user){
         margin-right: 10px;
     }
     .loghi-high p,
@@ -39,8 +39,7 @@
     .loghi-low{
         cursor: pointer;
     }
-    .loghi-high li:hover,
-    .playlist li:hover{
+    .loghi-high li:not(#logo):hover{
         border-left: 4px solid yellow;
         padding-left: 6px;
     }
@@ -53,10 +52,13 @@
     .playlist div:nth-of-type(2):hover .plus{
         background-color: white;
     }
-    
+    .playlist li:hover{
+        text-decoration: underline;
+    }
 }
 /* Responsive Navbar */
 @media screen and (min-width: 482px) and (max-width: 724px){
+    /* Responsive navbar 3xrow  */
     .navbar li{
         flex-basis: calc((100% / 3) - 5px);
     }
@@ -65,18 +67,20 @@
     }
 }
 @media screen and (min-width: 725px) and (max-width: 900px){
+    /* Responsive navbar 5xrow  */
     .navbar li{
         flex-basis: calc((100% / 5) - 5px);
     }
     .navbar{
         font-size: 0.8em;
     }
+    /* Responsive griglia tracce audio 4xrow*/
     .grid-movie li{
         flex-basis: calc(25% - 10px);
     }
 }
-
 @media screen and (min-width: 901px){
+    /* Responsive navbar maxXrow  */
     .navbar li{
         flex-basis: inherit;
         margin-right: 20px;
@@ -84,6 +88,7 @@
     .navbar{
         font-size: 0.8em;
     }
+    /* Responsive gliglia tracce audio 6xrow */
     .grid-movie li{
         flex-basis: calc(16.6666% - 10px);
     }

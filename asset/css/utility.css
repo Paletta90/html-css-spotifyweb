@@ -49,19 +49,15 @@
 /* Background */
 .bg-aside{
     background-color: #000000;
-    /* background-color: blue; */
 }
 .bg-footer{
     background-color: #282828;
-    /* background-color: red; */
 }
 .bg-main{
     background-color: #141922;
-    /* background-color: yellow; */
 }
 .bg-header{
     background-color: rgba(0,0,0,0.5);
-    /* background-color: orange; */
 }
 
 /* Flexbox */

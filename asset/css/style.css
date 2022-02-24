@@ -59,6 +59,13 @@ aside li{
 .new-playlist li{
     margin-bottom: 15px;
 }
+.plus{
+    padding: 10px;
+    font-size: 20px;
+    background-color: #707070;
+    color: black;
+    vertical-align: middle;
+}
 .loghi-high li:not(li>.f-big),
 .playlist{
     color: #707070;
@@ -70,13 +77,12 @@ aside li{
 }
 .loghi-low{
     width: 100%;
+    padding-bottom: 10px;
 }
-.plus{
-    padding: 10px;
-    font-size: 20px;
+.bg-img_user{
     background-color: #707070;
-    color: black;
-    vertical-align: middle;
+    border-radius: 50%;
+    padding: 0px 3px;
 }
 .loghi-high p,
 .loghi-low p,
@@ -214,12 +220,19 @@ footer p{
 .block-center svg{
     cursor: pointer;
 }
-#play:hover{
-    transform: scale(1.2);
-}
 .time-line,
 .volume-line{
     cursor: pointer;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    align-self: center;
+}
+#play:hover{
+    transform: scale(1.2);
 }
 .time-line:hover .line-done,
 .volume-line:hover .line-done{
@@ -229,14 +242,7 @@ footer p{
 .volume-line:hover .circle{
     display: block;
 }
-.circle{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: white;
-    align-self: center;
-    display: none;
-}
+
 /* Block a destra */
 .block-right svg{
     width: 15px;
@@ -254,6 +260,7 @@ footer p{
 /* Tag in diplay:none nel footer*/
 .block-right svg,
 .block-right .volume-line,
-.block-right .line-done{
+.block-right .line-done,
+.circle{
         display: none;
-    }
+}
